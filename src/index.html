@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>quiz app</title>
+  </head>
+
+  <body>
+    <main
+      class="w-full bg-[#023047] flex items-center justify-center flex-col py-6 font-serif h-screen"
+    >
+      <section
+        class="bg-[#F5EBE0] w-[70%] rounded-xl py-4 items-center flex justify-between flex-col"
+      >
+        <h1
+          class="mx-3 border-b-2 border-black text-2xl font-bold text-black py-2"
+        >
+          quiz app
+        </h1>
+        <section
+          class="flex items-center justify-between gap-2 flex-col py-3 px-3"
+        >
+          <div
+            id="question"
+            class="bg-[#E8D9D9] p-2 rounded-md text-wrap text-center m-2 shadow-lg"
+          >
+            Which of these option is correct about JavaScript ?
+          </div>
+          <div id="answer-btns" class="grid grid-cols-1 gap-2">
+            <span
+              class="shadow-xl bg-[#f5dada]  px-3 py-2 rounded-xl text-center hover:text-white hover:bg-[#023047]"
+              >Single Threaded Language</span
+            >
+            <span
+              class="shadow-xl bg-[#f5dada] px-3 py-3 rounded-xl text-center hover:text-white hover:bg-[#023047]"
+              >Multi Threaded Language</span
+            >
+            <span
+              class="shadow-xl bg-red-400 px-3 py-3 rounded-xl text-center hover:text-white hover:bg-[#023047]"
+              >Asynchronous Language</span
+            >
+            <span
+              class="shadow-xl bg-green-400  px-3 py-3 rounded-xl text-center hover:text-white hover:bg-[#023047]"
+              >Limited to browser</span
+            >
+          </div>
+        </section>
+        <button
+          id="next-btn"
+          class="hidden bg-[#F0F0F0]  px-4 py-2 rounded-xl hover:text-white hover:bg-[#023047]"
+        >
+          next
+        </button>
+      </section>
+      <script src="app.js"></script>
+    </main>
+  </body>
+</html>
